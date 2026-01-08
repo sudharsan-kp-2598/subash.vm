@@ -1,0 +1,16 @@
+[MESSAGES CONTROL]
+disable=
+    R0903,          # too-few-public-methods
+    C0103,          # naming style (df, st, etc.)
+    W2301           # unnecessary-ellipsis (intentional placeholders)
+
+
+[FORMAT]
+max-line-length=88
+
+[BASIC]
+good-names=df,st,n,s,l,r
+
+[TYPECHECK]
+ignored-modules=pandas,streamlit
+
