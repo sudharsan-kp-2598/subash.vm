@@ -1,0 +1,4 @@
+code_quality/undefined_variables.py:2:12: undefined name 'total'
+code_quality/unused_imports.py:1:1: 'math' imported but unused
+code_quality/bad_comparisons.py:2:12: use ==/!= to compare constant literals (str, bytes, int, float, tuple)
+code_quality/import_cycles/import_cycle_b.py:1:1: 'import_cycle_a' imported but unused

@@ -1,0 +1,65 @@
+************* Module undefined_variables
+code_quality/undefined_variables.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+code_quality/undefined_variables.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+code_quality/undefined_variables.py:2:11: E0602: Undefined variable 'total' (undefined-variable)
+************* Module unused_imports
+code_quality/unused_imports.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+code_quality/unused_imports.py:3:0: C0116: Missing function or method docstring (missing-function-docstring)
+code_quality/unused_imports.py:1:0: W0611: Unused import math (unused-import)
+************* Module dead_code
+code_quality/dead_code.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+code_quality/dead_code.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+code_quality/dead_code.py:3:4: W0101: Unreachable code (unreachable)
+************* Module mutable_defaults
+code_quality/mutable_defaults.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+code_quality/mutable_defaults.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+code_quality/mutable_defaults.py:1:0: W0102: Dangerous default value [] as argument (dangerous-default-value)
+************* Module high_complexity
+code_quality/high_complexity.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+code_quality/high_complexity.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+code_quality/high_complexity.py:2:4: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
+code_quality/high_complexity.py:1:0: R0911: Too many return statements (9/6) (too-many-return-statements)
+************* Module shadowing
+code_quality/shadowing.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+code_quality/shadowing.py:1:0: C0103: Constant name "count" doesn't conform to UPPER_CASE naming style (invalid-name)
+code_quality/shadowing.py:3:0: C0116: Missing function or method docstring (missing-function-docstring)
+code_quality/shadowing.py:4:4: W0621: Redefining name 'count' from outer scope (line 1) (redefined-outer-name)
+************* Module bad_comparisons
+code_quality/bad_comparisons.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+code_quality/bad_comparisons.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+code_quality/bad_comparisons.py:2:11: R0123: In 'x is 10', use '==' when comparing constant literals not 'is' ('x == 10') (literal-comparison)
+************* Module import_cycles.import_cycle_b
+code_quality/import_cycles/import_cycle_b.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+code_quality/import_cycles/import_cycle_b.py:1:0: E0401: Unable to import 'import_cycle_a' (import-error)
+code_quality/import_cycles/import_cycle_b.py:3:0: C0116: Missing function or method docstring (missing-function-docstring)
+code_quality/import_cycles/import_cycle_b.py:1:0: W0611: Unused import import_cycle_a (unused-import)
+************* Module import_cycles.import_cycle_a
+code_quality/import_cycles/import_cycle_a.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+code_quality/import_cycles/import_cycle_a.py:1:0: E0401: Unable to import 'import_cycle_b' (import-error)
+code_quality/import_cycles/import_cycle_a.py:3:0: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module hardcoded_secrets
+security/hardcoded_secrets.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+************* Module path_traversal
+security/path_traversal.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+security/path_traversal.py:3:0: C0116: Missing function or method docstring (missing-function-docstring)
+security/path_traversal.py:4:11: W1514: Using open without explicitly specifying an encoding (unspecified-encoding)
+************* Module insecure_temp_files
+security/insecure_temp_files.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+security/insecure_temp_files.py:3:0: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module weak_cryptography
+security/weak_cryptography.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+security/weak_cryptography.py:3:0: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module unsafe_deserialization
+security/unsafe_deserialization.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+security/unsafe_deserialization.py:3:0: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module subprocess_shell_injection
+security/subprocess_shell_injection.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+security/subprocess_shell_injection.py:3:0: C0116: Missing function or method docstring (missing-function-docstring)
+************* Module eval_exec
+security/eval_exec.py:1:0: C0114: Missing module docstring (missing-module-docstring)
+security/eval_exec.py:1:0: C0116: Missing function or method docstring (missing-function-docstring)
+security/eval_exec.py:2:11: W0123: Use of eval (eval-used)
+
+-----------------------------------
+Your code has been rated at 0.34/10
+

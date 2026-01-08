@@ -1,0 +1,77 @@
+{
+  "code_quality/unused_import.py": {
+    "issue": "unused-import",
+    "line": 1
+  },
+
+  "code_quality/import_cycle_a.py": {
+    "issue": "import-cycle"
+  },
+  "code_quality/import_cycle_b.py": {
+    "issue": "import-cycle"
+  },
+
+  "code_quality/undefined_variable.py": {
+    "issue": "undefined-variable",
+    "line": 2
+  },
+
+  "code_quality/variable_shadowing.py": {
+    "issue": "variable-shadowing",
+    "line": 4
+  },
+
+  "code_quality/mutable_default_argument.py": {
+    "issue": "mutable-default-argument",
+    "line": 1
+  },
+
+  "code_quality/bad_comparison.py": {
+    "issue": "bad-comparison",
+    "line": 2
+  },
+
+  "code_quality/dead_code.py": {
+    "issue": "dead-code",
+    "line": 3
+  },
+
+  "code_quality/high_complexity.py": {
+    "issue": "high-complexity"
+  },
+
+  "security/eval_exec.py": {
+    "issue": "eval-exec",
+    "line": 2
+  },
+
+  "security/subprocess_shell_injection.py": {
+    "issue": "subprocess-shell-injection",
+    "line": 4
+  },
+
+  "security/unsafe_deserialization.py": {
+    "issue": "unsafe-deserialization",
+    "line": 4
+  },
+
+  "security/weak_cryptography.py": {
+    "issue": "weak-cryptography",
+    "line": 4
+  },
+
+  "security/hardcoded_secret.py": {
+    "issue": "hardcoded-secret",
+    "line": 1
+  },
+
+  "security/insecure_temp_file.py": {
+    "issue": "insecure-temp-file",
+    "line": 4
+  },
+
+  "security/path_traversal.py": {
+    "issue": "path-traversal",
+    "line": 4
+  }
+}

@@ -1,0 +1,36 @@
+=== BLACK ===
+Cold run: FAILED after 90.724s | files formatted before failure: 1621
+Warm run 1: FAILED after 97.140s | files formatted before failure: 1621
+Warm run 2: FAILED after 104.417s | files formatted before failure: 1621
+Warm run 3: FAILED after 107.414s | files formatted before failure: 1621
+
+=== RUFF_FORMAT ===
+Cold run: FAILED after 0.320s | files formatted before failure: 1622
+Warm run 1: FAILED after 0.313s | files formatted before failure: 1622
+Warm run 2: FAILED after 0.325s | files formatted before failure: 1622
+Warm run 3: FAILED after 0.335s | files formatted before failure: 1622
+
+=== ISORT ===
+Cold run: 2.687s | files formatted: 1310
+Warm run 1: 2.675s | files formatted: 1310
+Warm run 2: 2.632s | files formatted: 1310
+Warm run 3: 2.648s | files formatted: 1310
+
+=== YAPF ===
+Cold run: FAILED after 32.939s | files formatted before failure: 186
+Warm run 1: FAILED after 32.303s | files formatted before failure: 186
+Warm run 2: FAILED after 31.949s | files formatted before failure: 186
+Warm run 3: FAILED after 30.020s | files formatted before failure: 186
+
+=== AUTOPEP8 ===
+Cold run: 1389.682s | files formatted: 1447
+Warm run 1: 1394.932s | files formatted: 1447
+Warm run 2: 1463.596s | files formatted: 1447
+Warm run 3: 1437.966s | files formatted: 1447
+
+=== SUMMARY ===
+black        | avg time: N/A | status: FAILED
+ruff_format  | avg time: N/A | status: FAILED
+isort        | avg time (successful runs): 2.661s | status: OK
+yapf         | avg time: N/A | status: FAILED
+autopep8     | avg time (successful runs): 1421.544s | status: OK

@@ -1,0 +1,131 @@
+
+Failed to import type_checker_benchmark/test_bench/advanced/generic_misuse.py due to TypeError("unsupported operand type(s) for +: 'int' and 'str'") (code: import_failed)
+In type_checker_benchmark/test_bench/advanced/generic_misuse.py at line 1
+   1: from typing import List
+      ^
+   2: 
+   3: 
+   4: def total(values: List[int]) -> int:
+Traceback (most recent call last):
+  File "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages/pyanalyze/name_check_visitor.py", line 1314, in _load_module
+    return importer.load_module_from_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages/pyanalyze/importer.py", line 102, in load_module_from_file
+    return import_module(str(abspath), abspath), False
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages/pyanalyze/importer.py", line 110, in import_module
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/advanced/generic_misuse.py", line 10, in <module>
+    total(numbers)  # List[str] passed where List[int] is expected
+    ^^^^^^^^^^^^^^
+  File "/home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/advanced/generic_misuse.py", line 5, in total
+    return sum(values)
+           ^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+Function may exit without returning a value (code: missing_return)
+In type_checker_benchmark/test_bench/advanced/protocol_mismatch.py at line 5
+   2: 
+   3: 
+   4: class Writer(Protocol):
+   5:     def write(self, data: str) -> int:
+          ^
+   6:         ...
+   7: 
+   8: 
+
+Incompatible argument type for w: expected /home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/advanced/protocol_mismatch.py.Writer (Protocol with members 'write') but got /home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/advanced/protocol_mismatch.py.FileWriter (code: incompatible_argument)
+  Value of protocol member 'write' conflicts
+    type of parameter 'data' is incompatible
+      Cannot assign str to bytes
+
+In type_checker_benchmark/test_bench/advanced/protocol_mismatch.py at line 18
+  15:     return w.write("hello")
+  16: 
+  17: 
+  18: save(FileWriter())
+           ^
+
+Incompatible assignment: expected TypedDict({"name": str, "age": int}), got Literal[{'name': 'Alice'}] (code: incompatible_assignment)
+  Key age is missing in Literal[{'name': 'Alice'}]
+
+In type_checker_benchmark/test_bench/advanced/typeddict_key_error.py at line 9
+   6:     age: int
+   7: 
+   8: 
+   9: user: User = {
+      ^
+  10:     "name": "Alice"
+  11:     # missing "age"
+  12: }
+
+Failed to import type_checker_benchmark/test_bench/basic/argument_type_mismatch.py due to TypeError("can't multiply sequence by non-int of type 'str'") (code: import_failed)
+In type_checker_benchmark/test_bench/basic/argument_type_mismatch.py at line 1
+   1: def square(x: int) -> int:
+      ^
+   2:     return x * x
+   3: 
+   4: 
+Traceback (most recent call last):
+  File "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages/pyanalyze/name_check_visitor.py", line 1314, in _load_module
+    return importer.load_module_from_file(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages/pyanalyze/importer.py", line 102, in load_module_from_file
+    return import_module(str(abspath), abspath), False
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages/pyanalyze/importer.py", line 110, in import_module
+    spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/basic/argument_type_mismatch.py", line 5, in <module>
+    square("4")
+  File "/home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/basic/argument_type_mismatch.py", line 2, in square
+    return x * x
+           ~~^~~
+TypeError: can't multiply sequence by non-int of type 'str'
+
+Incompatible assignment: expected int, got Literal['five'] (code: incompatible_assignment)
+  Cannot assign Literal['five'] to int
+
+In type_checker_benchmark/test_bench/basic/assignment_type_mismatch.py at line 1
+   1: count: int = "five"
+      ^
+
+Function may exit without returning a value (code: missing_return)
+In type_checker_benchmark/test_bench/basic/missing_return.py at line 1
+   1: def is_positive(x: int) -> bool:
+      ^
+   2:     if x > 0:
+   3:         return True
+
+Incompatible argument type for obj: expected collections.abc.Sized (Protocol with members '__len__') but got Optional[str] (code: incompatible_argument)
+  None has no attribute '__len__'
+
+In type_checker_benchmark/test_bench/basic/optional_misuse.py at line 5
+   2: 
+   3: 
+   4: def length(s: Optional[str]) -> int:
+   5:     return len(s)
+                     ^
+
+Incompatible return type: expected int, got Literal['10'] (code: incompatible_return_value)
+  Cannot assign Literal['10'] to int
+
+In type_checker_benchmark/test_bench/basic/wrong_return_type.py at line 2
+   1: def get_count() -> int:
+   2:     return "10"
+          ^
+
+Incompatible argument type for obj: expected collections.abc.Sized (Protocol with members '__len__') but got int (code: incompatible_argument)
+  int has no attribute '__len__'
+
+In type_checker_benchmark/test_bench/control_flow/incorrect_narrowing.py at line 6
+   3: 
+   4: def length(x: Union[str, int]) -> int:
+   5:     if isinstance(x, int):
+   6:         return len(x)
+                         ^
+   7:     else:
+   8:         return len(x)

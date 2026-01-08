@@ -1,0 +1,20 @@
+ninja: Entering directory `.pytype'
+[1/11] check optional_misuse
+[2/11] check protocol_mismatch
+[3/11] check unreachable_branch
+[4/11] check wrong_return_type
+FAILED: [code=1] /home/subash-nts0300/Typing-Analysis/.pytype/pyi/wrong_return_type.pyi 
+/home/subash-nts0300/miniconda3/envs/LFT/bin/python3.12 -m pytype.main --imports_info /home/subash-nts0300/Typing-Analysis/.pytype/imports/wrong_return_type.imports --module-name wrong_return_type --platform linux -V 3.12 -o /home/subash-nts0300/Typing-Analysis/.pytype/pyi/wrong_return_type.pyi --analyze-annotated --nofail --quick /home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/basic/wrong_return_type.py
+/home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/basic/wrong_return_type.py:2:12: error: in get_count: bad return type [bad-return-type]
+           Expected: int
+  Actually returned: str
+
+    return "10"
+           ~~~~
+
+
+For more details, see https://google.github.io/pytype/errors.html#bad-return-type
+ninja: build stopped: subcommand failed.
+Computing dependencies
+Analyzing 11 sources with 0 local dependencies
+Leaving directory '.pytype'

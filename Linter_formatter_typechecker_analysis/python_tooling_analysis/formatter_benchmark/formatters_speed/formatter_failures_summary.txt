@@ -1,0 +1,23 @@
+Formatter Failure Summary
+Generated: 2026-01-05 11:16:51.620060
+
+Formatter: BLACK
+Status: FAILED
+Last successful file: /tmp/tmpxwl4kf5h/Lib/test/test_exceptions.py
+Next file (likely failure): /tmp/tmpxwl4kf5h/Lib/test/test_extcall.py
+Error summary: reformatted /tmp/tmpxwl4kf5h/Lib/asyncio/exceptions.py
+------------------------------------------------------------
+
+Formatter: RUFF_FORMAT
+Status: FAILED
+Last successful file: /tmp/tmpqffeb_ap/Lib/test/test_source_encoding.py
+Next file (likely failure): /tmp/tmpqffeb_ap/Lib/test/test_spwd.py
+Error summary: [2026-01-05][11:18:40][ruff_workspace::resolver][DEBUG] Included path via `include`: "/tmp/tmpqffeb_ap/Lib/test/test_exception_variations.py"
+------------------------------------------------------------
+
+Formatter: YAPF
+Status: FAILED
+Last successful file: /tmp/tmpsednsrpg/Lib/test/test_unicode_identifiers.py
+Next file (likely failure): /tmp/tmpsednsrpg/Lib/test/test_unicodedata.py
+Error summary: raise ParseError('bad token', type, value, context)
+------------------------------------------------------------

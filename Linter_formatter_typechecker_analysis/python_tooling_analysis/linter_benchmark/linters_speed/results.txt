@@ -1,0 +1,43 @@
+linter_speed_comparison_results
+
+=== RUFF ===
+Cold run: 0.448s
+Warm run 1: 0.373s
+Warm run 2: 0.369s
+Warm run 3: 0.373s
+Avg warm: 0.372s
+
+=== PYLINT ===
+Cold run: 2222.426s
+Warm run 1: 2118.346s
+Warm run 2: 2104.287s
+Warm run 3: 2102.523s
+Avg warm: 2108.385s
+
+=== FLAKE8 ===
+Cold run: 9.707s
+Warm run 1: 9.812s
+Warm run 2: 9.813s
+Warm run 3: 9.849s
+Avg warm: 9.825s
+
+=== BANDIT ===
+Cold run: 34.457s
+Warm run 1: 34.085s
+Warm run 2: 34.404s
+Warm run 3: 34.306s
+Avg warm: 34.265s
+
+=== PYFLAKES ===
+Cold run: 13.959s
+Warm run 1: 13.937s
+Warm run 2: 13.949s
+Warm run 3: 13.869s
+Avg warm: 13.919s
+
+=== SUMMARY ===
+ruff     | cold: 0.448s | warm avg: 0.372s
+pylint   | cold: 2222.426s | warm avg: 2108.385s
+flake8   | cold: 9.707s | warm avg: 9.825s
+bandit   | cold: 34.457s | warm avg: 34.265s
+pyflakes | cold: 13.959s | warm avg: 13.919s

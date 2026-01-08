@@ -1,0 +1,42 @@
+/home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/advanced/generic_misuse.py
+  /home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/advanced/generic_misuse.py:10:7 - error: Argument of type "List[str]" cannot be assigned to parameter "values" of type "List[int]" in function "total"
+    "List[str]" is not assignable to "List[int]"
+      Type parameter "_T@list" is invariant, but "str" is not the same as "int"
+      Consider switching from "list" to "Sequence" which is covariant (reportArgumentType)
+/home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/advanced/protocol_mismatch.py
+  /home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/advanced/protocol_mismatch.py:18:6 - error: Argument of type "FileWriter" cannot be assigned to parameter "w" of type "Writer" in function "save"
+    "FileWriter" is incompatible with protocol "Writer"
+      "write" is an incompatible type
+        Type "(data: bytes) -> int" is not assignable to type "(data: str) -> int"
+          Parameter 1: type "str" is incompatible with type "bytes"
+            "str" is not assignable to "bytes" (reportArgumentType)
+/home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/advanced/typeddict_key_error.py
+  /home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/advanced/typeddict_key_error.py:9:14 - error: Type "dict[str, str]" is not assignable to declared type "User"
+    "age" is required in "User" (reportAssignmentType)
+/home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/advanced/variance_error.py
+  /home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/advanced/variance_error.py:10:10 - error: Argument of type "List[str]" cannot be assigned to parameter "items" of type "List[object]" in function "add_item"
+    "List[str]" is not assignable to "List[object]"
+      Type parameter "_T@list" is invariant, but "str" is not the same as "object"
+      Consider switching from "list" to "Sequence" which is covariant (reportArgumentType)
+/home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/basic/argument_type_mismatch.py
+  /home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/basic/argument_type_mismatch.py:5:8 - error: Argument of type "Literal['4']" cannot be assigned to parameter "x" of type "int" in function "square"
+    "Literal['4']" is not assignable to "int" (reportArgumentType)
+/home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/basic/assignment_type_mismatch.py
+  /home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/basic/assignment_type_mismatch.py:1:14 - error: Type "Literal['five']" is not assignable to declared type "int"
+    "Literal['five']" is not assignable to "int" (reportAssignmentType)
+/home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/basic/missing_return.py
+  /home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/basic/missing_return.py:1:28 - error: Function with declared return type "bool" must return value on all code paths
+    "None" is not assignable to "bool" (reportReturnType)
+/home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/basic/optional_misuse.py
+  /home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/basic/optional_misuse.py:5:16 - error: Argument of type "str | None" cannot be assigned to parameter "obj" of type "Sized" in function "len"
+    Type "str | None" is not assignable to type "Sized"
+      "None" is incompatible with protocol "Sized"
+        "__len__" is not present (reportArgumentType)
+/home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/basic/wrong_return_type.py
+  /home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/basic/wrong_return_type.py:2:12 - error: Type "Literal['10']" is not assignable to return type "int"
+    "Literal['10']" is not assignable to "int" (reportReturnType)
+/home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/control_flow/incorrect_narrowing.py
+  /home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench/control_flow/incorrect_narrowing.py:6:20 - error: Argument of type "int" cannot be assigned to parameter "obj" of type "Sized" in function "len"
+    "int" is incompatible with protocol "Sized"
+      "__len__" is not present (reportArgumentType)
+10 errors, 0 warnings, 0 informations

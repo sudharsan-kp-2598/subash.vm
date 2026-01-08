@@ -1,0 +1,130 @@
+2026-01-05 19:08:33,075 [PID 148293] INFO No binary specified, looking for `pyre.bin` in PATH
+2026-01-05 19:08:33,075 [PID 148293] INFO Pyre binary is located at `/home/subash-nts0300/miniconda3/envs/LFT/bin/pyre.bin`
+2026-01-05 19:08:33,075 [PID 148293] INFO Could not determine the number of Pyre workers from configuration. Auto-set the value to 7.
+2026-01-05 19:08:33,078 [PID 148293] INFO No typeshed specified, looking for it...
+2026-01-05 19:08:33,078 [PID 148293] INFO Found: `/home/subash-nts0300/miniconda3/envs/LFT/lib/pyre_check/typeshed`
+2026-01-05 19:08:33,079 [PID 148293] INFO Writing arguments into /tmp/pyre_arguments_14ytgv4q.json...
+2026-01-05 19:08:33,079 [PID 148293] DEBUG Arguments:
+{
+  "source_paths": {
+    "kind": "simple",
+    "paths": [
+      "/home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench"
+    ]
+  },
+  "search_paths": [
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$testslide",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$importlib_resources",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$attrs",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$pip",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$rich",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$immutabledict",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$pathspec",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$tomli",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$click",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$libcst",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$msgspec",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$pkg_resources",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$librt",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$markdown_it",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$pylint",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$dataclasses_json",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$mdurl",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$markupsafe",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$tomli_w",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$pytokens",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$isort",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$attr",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$marshmallow",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$black",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$mypyc",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$mypy",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$qcore",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$pydot",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$pyparsing",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$ast_decompiler",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$typeguard",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$stevedore",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$asynq",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$platformdirs",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$packaging",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$typeshed_client",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$ninja",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$pyright",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$jinja2",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/python3.12/site-packages$tomlkit",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/pyre_check/typeshed/stdlib",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/pyre_check/typeshed/stubs/ExifRead",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/pyre_check/typeshed/stubs/PyMySQL",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/pyre_check/typeshed/stubs/PyYAML",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/pyre_check/typeshed/stubs/aiofiles",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/pyre_check/typeshed/stubs/chevron",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/pyre_check/typeshed/stubs/colorama",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/pyre_check/typeshed/stubs/ldap3",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/pyre_check/typeshed/stubs/mysqlclient",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/pyre_check/typeshed/stubs/paramiko",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/pyre_check/typeshed/stubs/psycopg2",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/pyre_check/typeshed/stubs/pycurl",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/pyre_check/typeshed/stubs/python-dateutil",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/pyre_check/typeshed/stubs/pytz",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/pyre_check/typeshed/stubs/regex",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/pyre_check/typeshed/stubs/requests",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/pyre_check/typeshed/stubs/retry",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/pyre_check/typeshed/stubs/tqdm",
+    "/home/subash-nts0300/miniconda3/envs/LFT/lib/pyre_check/typeshed/stubs/ujson"
+  ],
+  "excludes": [],
+  "checked_directory_allowlist": [
+    "/home/subash-nts0300/Typing-Analysis/type_checker_benchmark/test_bench"
+  ],
+  "checked_directory_blocklist": [],
+  "extensions": [],
+  "log_path": "/home/subash-nts0300/Typing-Analysis/type_checker_benchmark/.pyre",
+  "global_root": "/home/subash-nts0300/Typing-Analysis/type_checker_benchmark",
+  "debug": false,
+  "python_version": {
+    "major": 3,
+    "minor": 12,
+    "micro": 12
+  },
+  "system_platform": "linux",
+  "shared_memory": {},
+  "parallel": true,
+  "number_of_workers": 7,
+  "additional_logging_sections": [],
+  "show_error_traces": false,
+  "strict": false
+}
+2026-01-05 19:08:33,100 [PID 148293] PERFORMANCE  Initialized shared memory (heap size: 8589934592, dep table pow: 1, hash table pow: 26): 0.001s
+2026-01-05 19:08:33,111 [PID 148293] PERFORMANCE  Initialized multiprocessing workers (workers: 7): 0.003s
+2026-01-05 19:08:33,111 [PID 148293] INFO  Building module tracker...
+2026-01-05 19:08:33,689 [PID 148293] PERFORMANCE  Module tracker built: 0.580s
+2026-01-05 19:08:33,689 [PID 148293] PERFORMANCE  Full environment built: 0.581s
+2026-01-05 19:08:33,690 [PID 148293] INFO  Collecting all definitions...
+2026-01-05 19:08:33,762 [PID 148293] PERFORMANCE  Collected definitions (defines: 26): 0.066s
+2026-01-05 19:08:33,763 [PID 148293] INFO  Checking 26 functions...
+2026-01-05 19:08:34,147 [PID 148293] INFO  Processed 2 of 26 functions
+2026-01-05 19:08:34,199 [PID 148293] INFO  Processed 4 of 26 functions
+2026-01-05 19:08:34,199 [PID 148293] INFO  Processed 6 of 26 functions
+2026-01-05 19:08:34,199 [PID 148293] INFO  Processed 8 of 26 functions
+2026-01-05 19:08:34,210 [PID 148293] INFO  Processed 10 of 26 functions
+2026-01-05 19:08:34,210 [PID 148293] INFO  Processed 12 of 26 functions
+2026-01-05 19:08:34,210 [PID 148293] INFO  Processed 14 of 26 functions
+2026-01-05 19:08:34,221 [PID 148293] INFO  Processed 16 of 26 functions
+2026-01-05 19:08:34,232 [PID 148293] INFO  Processed 18 of 26 functions
+2026-01-05 19:08:34,232 [PID 148293] INFO  Processed 20 of 26 functions
+2026-01-05 19:08:34,242 [PID 148293] INFO  Processed 22 of 26 functions
+2026-01-05 19:08:34,253 [PID 148293] INFO  Processed 24 of 26 functions
+2026-01-05 19:08:34,254 [PID 148293] INFO  Processed 26 of 26 functions
+2026-01-05 19:08:34,254 [PID 148293] PERFORMANCE  Check_TypeCheck: 0.500s
+2026-01-05 19:08:34,254 [PID 148293] MEMORY  Shared memory size post-typecheck (size: 2)
+2026-01-05 19:08:34,254 [PID 148293] INFO  Postprocessing 11 sources...
+2026-01-05 19:08:34,284 [PID 148293] INFO  Postprocessed 1 of 11 sources
+2026-01-05 19:08:34,285 [PID 148293] INFO  Postprocessed 3 of 11 sources
+2026-01-05 19:08:34,285 [PID 148293] INFO  Postprocessed 5 of 11 sources
+2026-01-05 19:08:34,285 [PID 148293] INFO  Postprocessed 7 of 11 sources
+2026-01-05 19:08:34,285 [PID 148293] INFO  Postprocessed 9 of 11 sources
+2026-01-05 19:08:34,285 [PID 148293] INFO  Postprocessed 11 of 11 sources
+2026-01-05 19:08:34,285 [PID 148293] PERFORMANCE  Check_Postprocessing: 0.025s
+2026-01-05 19:08:34,285 [PID 148293] PERFORMANCE  Check (request kind: FullCheck): 1.174s
+2026-01-05 19:08:34,316 [PID 148293] ERROR Found 10 type errors!

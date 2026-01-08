@@ -1,0 +1,13 @@
+code_quality/bad_comparisons.py:2:12: F632 use ==/!= to compare constant literals (str, bytes, int, float, tuple)
+code_quality/import_cycles/import_cycle_a.py:3:1: E302 expected 2 blank lines, found 1
+code_quality/import_cycles/import_cycle_b.py:1:1: F401 'import_cycle_a' imported but unused
+code_quality/import_cycles/import_cycle_b.py:3:1: E302 expected 2 blank lines, found 1
+code_quality/shadowing.py:3:1: E302 expected 2 blank lines, found 1
+code_quality/undefined_variables.py:2:12: F821 undefined name 'total'
+code_quality/unused_imports.py:1:1: F401 'math' imported but unused
+code_quality/unused_imports.py:3:1: E302 expected 2 blank lines, found 1
+security/insecure_temp_files.py:3:1: E302 expected 2 blank lines, found 1
+security/path_traversal.py:3:1: E302 expected 2 blank lines, found 1
+security/subprocess_shell_injection.py:3:1: E302 expected 2 blank lines, found 1
+security/unsafe_deserialization.py:3:1: E302 expected 2 blank lines, found 1
+security/weak_cryptography.py:3:1: E302 expected 2 blank lines, found 1

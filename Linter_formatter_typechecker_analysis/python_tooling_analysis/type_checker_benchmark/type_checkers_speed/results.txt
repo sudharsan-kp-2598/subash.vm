@@ -1,0 +1,34 @@
+
+=== TYPE CHECKER SPEED BENCHMARK ===
+
+--- PYRIGHT ---
+pyright    | run 1:   73.908s | status: COMPLETED
+pyright    | run 2:   73.203s | status: COMPLETED
+pyright    | run 3:   71.353s | status: COMPLETED
+
+--- MYPY ---
+mypy       | run 1:    0.165s | status: COMPLETED
+mypy       | run 2:    0.165s | status: COMPLETED
+mypy       | run 3:    0.166s | status: COMPLETED
+
+--- PYTYPE ---
+pytype     | run 1:   26.975s | status: COMPLETED
+pytype     | run 2:   26.931s | status: COMPLETED
+pytype     | run 3:   27.430s | status: COMPLETED
+
+--- PYRE ---
+pyre       | run 1:    0.615s | status: COMPLETED
+pyre       | run 2:    0.716s | status: COMPLETED
+pyre       | run 3:    0.616s | status: COMPLETED
+
+--- PYANALYZE ---
+pyanalyze  | run 1:  934.683s | status: COMPLETED
+pyanalyze  | run 2: 1829.612s | status: COMPLETED
+pyanalyze  | run 3:   73.527s | status: COMPLETED
+
+=== SUMMARY ===
+pyright    | avg:   72.821s | min:   71.353s | max:   73.908s
+mypy       | avg:    0.165s | min:    0.165s | max:    0.166s
+pytype     | avg:   27.112s | min:   26.931s | max:   27.430s
+pyre       | avg:    0.649s | min:    0.615s | max:    0.716s
+pyanalyze  | avg:  945.940s | min:   73.527s | max: 1829.612s

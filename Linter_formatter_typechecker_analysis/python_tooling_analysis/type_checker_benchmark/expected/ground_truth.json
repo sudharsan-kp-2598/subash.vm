@@ -1,0 +1,15 @@
+{
+  "basic/wrong_return_type.py": "wrong-return-type",
+  "basic/argument_type_mismatch.py": "argument-type-mismatch",
+  "basic/assignment_type_mismatch.py": "assignment-type-mismatch",
+  "basic/missing_return.py": "missing-return",
+  "basic/optional_misuse.py": "optional-misuse",
+
+  "advanced/protocol_mismatch.py": "protocol-mismatch",
+  "advanced/generic_misuse.py": "generic-misuse",
+  "advanced/variance_error.py": "variance-error",
+  "advanced/typeddict_key_error.py": "typeddict-key-error",
+
+  "control_flow/unreachable_branch.py": "unreachable-branch",
+  "control_flow/incorrect_narrowing.py": "incorrect-narrowing"
+}
