@@ -1,0 +1,15 @@
+
+1) Git LFS doesnt allow proper garbage collection even if we deleted the file and no commits pointed to that file , 
+Lfs wont allow for garbage collection leadingto taking up extra space
+
+2) even if git can push push to remote storages it only pushes to git like storages no common object oriented dumb storages
+Like Google cloud storage which doesnt know how to interact with git .
+
+3) Where DVC can push and pull to anywhere no constraints .
+
+4) DVC worries about what file produced what output from which data and versions them.
+
+   Git doesnt cares about that and versions nothing.
+
+5) DVC can handle pipelines and make the results reproducible , tracks experiments where git doesnt do that.
+

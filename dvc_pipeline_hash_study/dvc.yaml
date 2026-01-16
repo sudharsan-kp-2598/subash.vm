@@ -1,0 +1,16 @@
+stages:
+  clean_data:
+    cmd: python clean.py
+    deps:
+      - clean.py
+      - raw_data.csv
+    outs:
+      - cleaned_data.csv
+
+  train_model:
+    cmd: python train.py
+    deps:
+      - train.py
+      - cleaned_data.csv
+    outs:
+      - model.txt
