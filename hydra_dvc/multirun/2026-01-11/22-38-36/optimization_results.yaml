@@ -1,0 +1,5 @@
+name: optuna
+best_params:
+  lr: 0.09698417396799873
+  model.hidden_dim: 256
+best_value: 97.42

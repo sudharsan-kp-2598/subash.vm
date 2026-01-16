@@ -1,0 +1,3 @@
+- lr=0.09766627133786099
+- model.hidden_dim=256
+- epochs=10

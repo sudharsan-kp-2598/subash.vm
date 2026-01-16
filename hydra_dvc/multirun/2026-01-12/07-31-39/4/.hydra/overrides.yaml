@@ -1,0 +1,3 @@
+- lr=0.03111998205299424
+- model.hidden_dim=64
+- experiment=sweep

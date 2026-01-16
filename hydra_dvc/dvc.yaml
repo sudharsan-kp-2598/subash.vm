@@ -1,0 +1,14 @@
+stages:
+  train:
+    cmd: python main.py
+    deps:
+      - main.py
+      - data_builder.py
+      - train.py
+      - build_model.py
+      - build_component.py
+      - config.yaml
+    outs:
+      - model.pt
+    metrics:
+      - metrics.json

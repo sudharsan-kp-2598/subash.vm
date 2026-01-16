@@ -1,0 +1,2 @@
+- optimizer._target_=torch.optim.Adam
+- optimizer.lr=0.001

@@ -1,0 +1,13 @@
+seed: 42
+epochs: 10
+lr: 0.07857933249375265
+batch_size: 16
+loss:
+  name: MSELoss
+  params: {}
+model:
+  _target_: build_model.SimpleMNISTNet
+  hidden_dim: 256
+optimizer:
+  _target_: torch.optim.SGD
+  lr: ${lr}

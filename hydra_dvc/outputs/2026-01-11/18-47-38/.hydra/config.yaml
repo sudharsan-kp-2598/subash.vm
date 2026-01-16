@@ -1,0 +1,11 @@
+seed: 42
+epochs: 10
+lr: 2
+batch_size: 16
+loss:
+  name: MSELoss
+  params: {}
+
+hydra:
+  job:
+    chdir: true

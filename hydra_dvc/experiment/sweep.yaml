@@ -1,0 +1,15 @@
+# @package _global_
+defaults:
+  - override /hydra/sweeper: optuna
+
+hydra:
+  sweeper:
+    sampler:
+      _target_: optuna.samplers.TPESampler
+      seed: 42
+    direction: maximize
+    study_name: mnist_optuna
+    n_trials: 20
+    params:
+      lr: interval(0.001, 0.1)
+      model.hidden_dim: choice(64, 128, 256)

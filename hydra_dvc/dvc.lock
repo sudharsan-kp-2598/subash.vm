@@ -1,0 +1,38 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python main.py
+    deps:
+    - path: build_component.py
+      hash: md5
+      md5: 44fef560bc48136af50e82c94e06e74b
+      size: 272
+    - path: build_model.py
+      hash: md5
+      md5: 7fee79e60372c2f2688168e7df1cecf7
+      size: 359
+    - path: config.yaml
+      hash: md5
+      md5: 3f96895edc4ed3b79cfde305426872ab
+      size: 289
+    - path: data_builder.py
+      hash: md5
+      md5: 64a2163c152190a0410d40116ef4c3da
+      size: 2060
+    - path: main.py
+      hash: md5
+      md5: c498f318c437ae58bb5f24d7c0cab9f4
+      size: 877
+    - path: train.py
+      hash: md5
+      md5: 8355522a0f92be7a0942508863d0916b
+      size: 1628
+    outs:
+    - path: metrics.json
+      hash: md5
+      md5: 4539f2b238f1b153d19321e9eeb48c0f
+      size: 68
+    - path: model.pt
+      hash: md5
+      md5: aecf658476d72beb7f54e7db2a7cb231
+      size: 409353
